@@ -1,0 +1,9 @@
+README.md
+brain_games/__init.py__
+brain_games/scripts/__init.py__
+brain_games/scripts/brain_games.py
+python_project_lvl1.egg-info/PKG-INFO
+python_project_lvl1.egg-info/SOURCES.txt
+python_project_lvl1.egg-info/dependency_links.txt
+python_project_lvl1.egg-info/entry_points.txt
+python_project_lvl1.egg-info/top_level.txt
