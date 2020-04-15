@@ -21,7 +21,7 @@ def correct_answer(answer):
 def main():
     counter = 0
     greet()
-    print('Answer "yes" if number even otherwise answer "no".', end='\n\n') # noqa: E501
+    print('Answer "yes" if number even otherwise answer "no".', end='\n\n')
     name = welcome_user()
     while counter < 3:
         number = randint(1, 99)
@@ -37,7 +37,7 @@ def main():
             counter += 1
             answer = ''
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct}'. Let\'s try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct}'. Let\'s try again, {name}!")  # noqa: E501
             break
     if counter == 3:
         print('Congratulations, {}!'.format(name))
