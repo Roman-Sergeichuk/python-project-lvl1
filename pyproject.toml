@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-project-lvl1"
-version = "0.3.0"
+version = "0.4.0"
 description = ""
 authors = ["Roman-Sergeichuk <sergeichuk.roman@mail.ru>"]
 packages = [
@@ -17,6 +17,7 @@ flake8 = "^3.7.9"
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
 
 [build-system]
 requires = ["poetry>=0.12"]

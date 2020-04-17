@@ -1,12 +1,12 @@
-from brain_games.scripts.brain_games import greet, get_rules_even
-from brain_games.games.even import get_question
+from brain_games.scripts.brain_games import greet, get_rules_calc
+from brain_games.games.calc import get_question
 from brain_games.cli import welcome_user
 
 
 def main():
     counter = 0
     greet()
-    get_rules_even()
+    get_rules_calc()
     name = welcome_user()
     while counter < 3:
         task = get_question()
@@ -25,7 +25,3 @@ def main():
             break
     if counter == 3:
         print(f'Congratulations, {name}')
-
-
-if __name__ == '__main__':
-    main()
