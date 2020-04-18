@@ -1,6 +1,6 @@
 from brain_games.scripts.brain_games import greet, get_rules_calc
 from brain_games.games.calc import get_question
-from brain_games.cli import welcome_user
+from brain_games.cli import welcome_user, request_answer
 
 
 def main():
@@ -13,7 +13,7 @@ def main():
         question = task[0]
         true_answer = str(task[1])
         print(f'Question: {question}')
-        user_answer = input('Your answer: ')
+        user_answer = request_answer()
         if user_answer == true_answer:
             print('Correct!')
             counter += 1
@@ -24,4 +24,4 @@ def main():
             )
             break
     if counter == 3:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')

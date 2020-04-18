@@ -1,12 +1,12 @@
-from brain_games.scripts.brain_games import greet, get_rules_even
-from brain_games.games.even import get_question
+from brain_games.scripts.brain_games import greet, get_rules_gcd
 from brain_games.cli import welcome_user, request_answer
+from brain_games.games.gcd import get_question
 
 
 def main():
     counter = 0
     greet()
-    get_rules_even()
+    get_rules_gcd()
     name = welcome_user()
     while counter < 3:
         task = get_question()
@@ -18,13 +18,11 @@ def main():
             print('Correct!')
             counter += 1
         else:
-            print(
-                f"'{user_answer}' is wrong answer ;(. Correct answer was '{true_answer}'."  # noqa: E501
-                f"\nLet's try again, {name}!"
-            )
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{true_answer}'. "  # noqa: E501
+                  f"Let's try again, {name}!")
             break
     if counter == 3:
-        print(f'Congratulations, {name}!')
+        print(f'Congratulations, {name}')
 
 
 if __name__ == '__main__':
