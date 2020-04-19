@@ -17,6 +17,10 @@ def get_rules_gcd():
     print('Find the greatest common divisor of given numbers.', end='\n\n')
 
 
+def get_rules_progression():
+    print('What number is missing in the progression?', end='\n\n')
+
+
 def main():
     greet()
     welcome_user()
