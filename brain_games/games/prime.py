@@ -1,3 +1,8 @@
+"""This function creates random number and returns
+tuple of string of this number and string 'yes' if
+number is prime or 'no' if not"""
+
+
 from random import randint
 
 

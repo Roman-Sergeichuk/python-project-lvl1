@@ -1,3 +1,7 @@
+"""This function creates random arithmetic progression and
+returns tuple of string of progression and thought number in it"""
+
+
 from random import randint, choice
 
 

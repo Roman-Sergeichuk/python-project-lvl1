@@ -1,3 +1,7 @@
+"""This function creates random math operation of two ranom numbers
+and returns tuple of string of this operation and result"""
+
+
 from random import randint, choice
 
 

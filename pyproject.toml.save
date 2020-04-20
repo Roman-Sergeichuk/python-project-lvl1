@@ -1,17 +1,11 @@
 [tool.poetry]
 name = "python-project-lvl1"
-version = "0.8.0"
-description = "The set of math mini-games"
+version = "0.7.0"
+description = "A set of math mini-games"
 authors = ["Roman-Sergeichuk <sergeichuk.roman@mail.ru>"]
-repository = "https://github.com/Roman-Sergeichuk/python-project-lvl1.git"
+repository = https://github.com/Roman-Sergeichuk/python-project-lvl1.git
 classifiers = [
-  "Development Status :: 3 - Alpha",
-  "Intended Audience :: Education",
-  "License :: Freeware",
-  "Programming Language :: Python :: 3.6",
-  "Programming Language :: Python :: 3.7",
-  "Programming Language :: Python :: 3.8"
-]
+ "Topic :: Development Status :: 3 - Alpha",
 packages = [
   { include = "brain_games" },
 ]
