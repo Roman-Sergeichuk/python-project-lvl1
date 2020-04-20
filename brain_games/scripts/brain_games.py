@@ -21,6 +21,10 @@ def get_rules_progression():
     print('What number is missing in the progression?', end='\n\n')
 
 
+def get_rules_prime():
+    print('Answer "yes" if given number is prime. Otherwise answer "no".', end='\n\n')  # noqa: E501
+
+
 def main():
     greet()
     welcome_user()

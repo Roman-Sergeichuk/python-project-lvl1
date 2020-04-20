@@ -1,7 +1,7 @@
 from random import randint, choice
 
 
-def get_question():
+def get_calc():
     val1 = randint(1, 20)
     val2 = randint(1, 20)
     operator_list = (['+', '-', '*'])

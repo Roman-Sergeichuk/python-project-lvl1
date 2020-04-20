@@ -1,5 +1,6 @@
+#!/usr/bin/env python3
 from brain_games.scripts.brain_games import greet, get_rules_even
-from brain_games.games.even import get_question
+from brain_games.games.even import get_even
 from brain_games.cli import welcome_user, request_answer
 
 
@@ -9,7 +10,7 @@ def main():
     get_rules_even()
     name = welcome_user()
     while counter < 3:
-        task = get_question()
+        task = get_even()
         question = task[0]
         true_answer = str(task[1])
         print(f'Question: {question}')

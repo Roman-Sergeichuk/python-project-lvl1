@@ -1,6 +1,7 @@
+#!/usr/bin/env python3
 from brain_games.scripts.brain_games import greet, get_rules_gcd
 from brain_games.cli import welcome_user, request_answer
-from brain_games.games.gcd import get_question
+from brain_games.games.gcd import get_gcd
 
 
 def main():
@@ -9,7 +10,7 @@ def main():
     get_rules_gcd()
     name = welcome_user()
     while counter < 3:
-        task = get_question()
+        task = get_gcd()
         question = task[0]
         true_answer = str(task[1])
         print(f'Question: {question}')
@@ -18,8 +19,10 @@ def main():
             print('Correct!')
             counter += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{true_answer}'. "  # noqa: E501
-                  f"Let's try again, {name}!")
+            print(
+                  f"'{user_answer}' is wrong answer ;(. Correct answer was '{true_answer}'. "  # noqa: E501
+                  f"\nLet's try again, {name}!"
+            )
             break
     if counter == 3:
         print(f'Congratulations, {name}')

@@ -1,7 +1,7 @@
 from random import randint, choice
 
 
-def get_question():
+def get_progression():
     start = randint(0, 20)
     step = randint(1, 10)
     sequence = []
