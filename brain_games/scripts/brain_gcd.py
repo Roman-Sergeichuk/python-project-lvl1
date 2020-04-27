@@ -10,22 +10,19 @@ def main():
     get_rules_gcd()
     name = welcome_user()
     while counter < 3:
-        task = get_gcd()
-        question = task[0]
-        true_answer = str(task[1])
+        (question, true_answer) = get_gcd()
         print(f'Question: {question}')
         user_answer = request_answer()
-        if user_answer == true_answer:
-            print('Correct!')
-            counter += 1
-        else:
+        if user_answer != true_answer:
             print(
-                  f"'{user_answer}' is wrong answer ;(. Correct answer was '{true_answer}'. "  # noqa: E501
-                  f"\nLet's try again, {name}!"
+                f"'{user_answer}' is wrong answer ;(. Correct answer was '{true_answer}'."  # noqa: E501
+                f"\nLet's try again, {name}!"
             )
             break
-    if counter == 3:
-        print(f'Congratulations, {name}')
+        print('Correct!')
+        counter += 1
+    else:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':

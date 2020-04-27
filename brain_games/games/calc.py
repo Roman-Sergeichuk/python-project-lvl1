@@ -3,19 +3,13 @@ and returns tuple of string of this operation and result"""
 
 
 from random import randint, choice
+from operator import add, sub, mul
 
 
 def get_calc():
-    val1 = randint(1, 20)
-    val2 = randint(1, 20)
-    operator_list = (['+', '-', '*'])
-    operator = choice(operator_list)
-    if operator == '+':
-        question = str(val1) + ' ' + operator + ' ' + str(val2)
-        return question, val1 + val2
-    if operator == '-':
-        question = str(val1) + ' ' + operator + ' ' + str(val2)
-        return question, val1 - val2
-    if operator == '*':
-        question = str(val1) + ' ' + operator + ' ' + str(val2)
-        return question, val1 * val2
+    a = randint(1, 20)
+    b = randint(1, 20)
+    operation = choice([('+', add(a, b)), ('-', sub(a, b)), ('*', mul(a, b))])
+    (operator, result) = operation
+    question = f'{a} {operator} {b}'
+    return question, str(result)

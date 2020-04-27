@@ -6,11 +6,19 @@ number is prime or 'no' if not"""
 from random import randint
 
 
+def is_prime(val):
+    if val % 2 == 0:
+        return False
+    for i in range(3, val, 2):
+        if val % i == 0:
+            return False
+    return True
+
+
 def get_prime():
     val = randint(2, 100)
-    if val > 2 and val % 2 == 0:
-        return val, 'no'
-    for i in range(3, val):
-        if val % i == 0:
-            return val, 'no'
-    return val, 'yes'
+    if is_prime(val):
+        answer = 'yes'
+    else:
+        answer = 'no'
+    return str(val), answer

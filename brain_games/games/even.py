@@ -8,5 +8,6 @@ from random import randint
 def get_even():
     number = randint(1, 99)
     if number % 2 == 0:
-        return number, 'yes'
-    return number, 'no'
+        answer = 'yes'
+    answer = 'no'
+    return str(number), answer
