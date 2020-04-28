@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-project-lvl1"
-version = "0.9.0"
+version = "0.10.0"
 description = "The set of math mini-games"
 authors = ["Roman-Sergeichuk <sergeichuk.roman@mail.ru>"]
 repository = "https://github.com/Roman-Sergeichuk/python-project-lvl1.git"
