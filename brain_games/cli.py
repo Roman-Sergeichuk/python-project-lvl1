@@ -9,8 +9,7 @@ def show_rules(GAME_RULES):
     print(GAME_RULES, end='\n\n')
 
 
-def welcome_user(GAME_RULES):
-    print(GAME_RULES, end='\n\n')
+def welcome_user():
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name), end='\n\n')
     return name
