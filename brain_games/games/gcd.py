@@ -5,7 +5,10 @@ tuple of string of these numbers and their great common divisor"""
 from random import randint
 
 
-def get_gcd():
+GAME_RULES = 'Find the greatest common divisor of given numbers.'
+
+
+def get_game():
     a = randint(1, 99)
     b = randint(1, 99)
     question = f'{a} {b}'

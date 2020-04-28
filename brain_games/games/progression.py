@@ -5,7 +5,10 @@ returns tuple of string of progression and thought number in it"""
 from random import randint
 
 
-def get_progression():
+GAME_RULES = 'What number is missing in the progression?'
+
+
+def get_game():
     start = randint(0, 20)
     step = randint(1, 10)
     hidden_index = randint(0, 9)

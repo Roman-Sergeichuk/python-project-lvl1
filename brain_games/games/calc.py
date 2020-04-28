@@ -6,7 +6,10 @@ from random import randint, choice
 from operator import add, sub, mul
 
 
-def get_calc():
+GAME_RULES = 'What is the result of the expression?'
+
+
+def get_game():
     a = randint(1, 20)
     b = randint(1, 20)
     operation = choice([('+', add(a, b)), ('-', sub(a, b)), ('*', mul(a, b))])
