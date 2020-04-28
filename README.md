@@ -19,18 +19,18 @@
 <h3> Installation and launch of version 0.3.0 </h3>
 <a href="https://asciinema.org/a/SFzXjnvur2neGi0hQoAactLep" target="_blank"><img src="https://asciinema.org/a/SFzXjnvur2neGi0hQoAactLep.svg" /></a>
 
-<h4> Installation and launch of version 0.4.0 </h4>
+<h3> Installation and launch of version 0.4.0 </h3>
 <a href="https://asciinema.org/a/GRYjiDOetKe7dNMDW69CXn4CF" target="_blank"><img src="https://asciinema.org/a/GRYjiDOetKe7dNMDW69CXn4CF.svg" /></a>
 
-<h5> Installation and launch version 0.5.0 </h5>
+<h3> Installation and launch version 0.5.0 </h3>
 <a href="https://asciinema.org/a/gj5S0aufFEtosOHcdGDRU6nIW" target="_blank"><img src="https://asciinema.org/a/gj5S0aufFEtosOHcdGDRU6nIW.svg" /></a>
 
-<h6> Installation and launch version 0.6.0 </h6>
+<h3> Installation and launch version 0.6.0 </h3>
 <a href="https://asciinema.org/a/FvAY8dEAQNkg2x4D1pk5avKEx" target="_blank"><img src="https://asciinema.org/a/FvAY8dEAQNkg2x4D1pk5avKEx.svg" /></a>
 
-<h7> Installation and launch version 0.8.0 </h7>
+<h3> Installation and launch version 0.8.0 </h3>
 <a href="https://asciinema.org/a/01hnEzzpgTmxzB9seczkigANL" target="_blank"><img src="https://asciinema.org/a/01hnEzzpgTmxzB9seczkigANL.svg" /></a>
 
-<h8> Installation and launch version 0.10.0 </h8>
+<h3> Installation and launch version 0.10.0 </h3>
 <a href="https://asciinema.org/a/uCnKN1vX6HO0X9bGr4d6RaFOF" target="_blank"><img src="https://asciinema.org/a/uCnKN1vX6HO0X9bGr4d6RaFOF.svg" /></a>
 
