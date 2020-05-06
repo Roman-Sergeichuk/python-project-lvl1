@@ -4,14 +4,18 @@ import random
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
+def is_divided_by(val, divider):
+    return val % divider
+
+
 def is_prime(val):
     """this predicate function to check the prime number"""
-    if val < 2 or (val > 2 and val % 2 == 0):
+    if val < 2 or (val > 2 and is_divided_by(val, 2) == 0):
         return False
     elif val == 2:
         return True
     for i in range(3, val, 2):
-        if val % i == 0:
+        if is_divided_by(val, 3) == 0:
             return False
     return True
 
