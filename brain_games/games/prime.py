@@ -6,7 +6,7 @@ RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_divided_by(val, divider):
-    return val % divider
+    return val % divider == 0
 
 
 def is_prime(val):
@@ -16,7 +16,7 @@ def is_prime(val):
     elif val == 2:
         return True
     for i in range(3, val, 2):
-        if is_divided_by(val, i) == 0:
+        if is_divided_by(val, i):
             return False
     return True
 
