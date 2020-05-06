@@ -4,12 +4,11 @@
 from brain_games import cli
 
 
-def run(game):
+def run(game, rounds=3):
     cli.greet()
-    cli.show_rules(game.GAME_RULES)
-    name = cli.welcome_user()
+    name = cli.welcome_user(game.RULES)
     counter = 0
-    while counter < 3:
+    while counter < rounds:
         question, true_answer = game.get_game()
         user_answer = cli.request_answer(question)
         if user_answer != true_answer:

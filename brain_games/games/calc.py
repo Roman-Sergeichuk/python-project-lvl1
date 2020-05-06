@@ -2,17 +2,22 @@
 and returns tuple of string of this operation and result"""
 
 
-from random import randint, choice
-from operator import add, sub, mul
+import random
+import operator
 
 
-GAME_RULES = 'What is the result of the expression?'
+RULES = 'What is the result of the expression?'
 
 
 def get_game():
-    a = randint(1, 20)
-    b = randint(1, 20)
-    operation = choice([('+', add(a, b)), ('-', sub(a, b)), ('*', mul(a, b))])
-    (operator, result) = operation
-    question = f'{a} {operator} {b}'
+    a = random.randint(1, 20)
+    b = random.randint(1, 20)
+    OPERATIONS = [
+        ('+', operator.add(a, b)),
+        ('-', operator.sub(a, b)),
+        ('*', operator.mul(a, b))
+    ]
+    operation = random.choice(OPERATIONS)
+    symbol, result = operation
+    question = f'{a} {symbol} {b}'
     return question, str(result)

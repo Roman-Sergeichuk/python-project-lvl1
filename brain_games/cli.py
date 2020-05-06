@@ -5,13 +5,12 @@ def greet():
     print('Welcome to the Brain Games!')
 
 
-def show_rules(GAME_RULES):
-    print(GAME_RULES, end='\n\n')
-
-
-def welcome_user():
+def welcome_user(rules):
+    print(rules)
+    print()
     name = prompt.string('May I have your name? ')
-    print('Hello, {}!'.format(name), end='\n\n')
+    print('Hello, {}!'.format(name))
+    print()
     return name
 
 
