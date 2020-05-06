@@ -35,5 +35,3 @@ number is prime or 'no' if not"""
     else:
         answer = 'no'
     return str(val), answer
-
-print(get_game())
