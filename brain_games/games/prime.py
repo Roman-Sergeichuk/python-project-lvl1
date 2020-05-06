@@ -14,7 +14,7 @@ def is_prime(val):
         return False
     elif val == 2:
         return True
-    elif (val > 2 and is_divided_by(val, 2) == 0):
+    elif val > 2 and is_divided_by(val, 2) == 0:
         return False
     for i in range(3, val, 2):
         if is_divided_by(val, 3) == 0:
