@@ -11,13 +11,14 @@ def is_divided_by(val, divider):
 def is_prime(val):
     """this predicate function to check the prime number"""
     if val < 2 or (val > 2 and is_divided_by(val, 2) == 0):
-        return False
+        result = False
     elif val == 2:
-        return True
+        result = True
     for i in range(3, val, 2):
         if is_divided_by(val, 3) == 0:
-            return False
-    return True
+            result = False
+    result = True
+    return result
 
 
 def get_game():
