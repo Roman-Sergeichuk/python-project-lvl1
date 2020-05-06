@@ -2,24 +2,22 @@
 returns tuple of string of progression and thought number in it"""
 
 
-from random import randint
+import random
 
 
 RULES = 'What number is missing in the progression?'
 
 
 def get_game():
-    start = randint(0, 20)
-    step = randint(1, 10)
-    hidden_index = randint(0, 9)
+    start = random.randint(0, 20)
+    step = random.randint(1, 10)
+    hidden_index = random.randint(0, 9)
     sequence = ''
     for i in range(10):
         if hidden_index == i:
-            sequence += '..'
+            sequence += '.. '
             val = start
         else:
-            sequence += str(start)
+            sequence += f'{start} '
         start += step
-        if i < 9:
-            sequence += ' '
-    return sequence, str(val)
+    return sequence[:-1], str(val)
